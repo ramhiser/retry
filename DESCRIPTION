@@ -1,0 +1,13 @@
+Package: retry
+Title: Retry Any Expression or Function
+Version: 0.1
+Date: 2016-03-27
+Author: John A. Ramey
+Maintainer: John A. Ramey <johnramey@gmail.com>
+Description: A port of the Python package *retrying* to add retry behavior to
+    any R expression or function.
+Depends:
+    R (>= 3.0)
+License: MIT
+LazyData: true
+RoxygenNote: 5.0.1
