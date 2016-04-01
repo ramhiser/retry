@@ -2,11 +2,26 @@
 % Please edit documentation in R/retry.r
 \name{retry}
 \alias{retry}
-\title{Retry expression}
+\title{Retry a function}
 \usage{
-retry(expr, config)
+retry(f, config, ...)
+}
+\arguments{
+\item{f}{function to add retry behavior}
+
+\item{config}{named list to specify retry behavior}
+
+\item{...}{additional arguments passed to \code{f}}
+}
+\value{
+a function with retry behavior added to the function \code{f}
 }
 \description{
-Retry expression
+The function \code{f} is given retry behavior based on the specification in
+the \code{config} configuration list.
+}
+\details{
+The default behavior is to retry the function \code{f} forever without
+waiting.
 }
 

@@ -1,5 +1,5 @@
 # retry
-R Package to Retry Any Expression or Function
+R Package to Retry Any Function
 
 ## Config Options
 
