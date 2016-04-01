@@ -9,9 +9,10 @@
 #' @export
 #' @param f function to add retry behavior
 #' @param config named list to specify retry behavior
+#' @param ... additional arguments passed to \code{f}
 #' @return a function with retry behavior added to the function \code{f}
-retry_f <- function(f, config) {
-  f()
+retry_f <- function(f, config, ...) {
+  f(...)
 }
 
 #' Retry expression

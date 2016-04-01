@@ -4,12 +4,14 @@
 \alias{retry_f}
 \title{Retry a function}
 \usage{
-retry_f(f, config)
+retry_f(f, config, ...)
 }
 \arguments{
 \item{f}{function to add retry behavior}
 
 \item{config}{named list to specify retry behavior}
+
+\item{...}{additional arguments passed to \code{f}}
 }
 \value{
 a function with retry behavior added to the function \code{f}
